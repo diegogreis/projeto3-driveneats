@@ -22,75 +22,77 @@
    <main>
       <h3>Primeiro, seu prato</h3>
       <section>
-         <div class="order">
+         <div class="order" onclick="pickPrato(this)">
             <img src="./img/frango_yin_yang 1.png" alt="Frango Yin Yang">
             <h4>Frango Yin Yang</h4>
-            <p id="description">Um pouco de batata, <br> um pouco de salada</p>
-            <p id="price">R$ 14,90</p>
+            <p id="description">Um pouco de batata, <br> um pouco de salada.</p>
+            <p id="price">R$ 15,99</p>
          </div>
-         <div class="order">
-            <img src="./img/frango_yin_yang 1.png" alt="Frango Yin Yang">
-            <h4>Frango Yin Yang</h4>
-            <p id="description">Um pouco de batata, <br> um pouco de salada</p>
-            <p id="price">R$ 14,90</p>
+         <div class="order" onclick="pickPrato(this)">
+            <img src="./img/x-burger.jpg" alt="Cheese Burguer">
+            <h4>X-Burgão</h4>
+            <p id="description">Artesanal e delicioso!</p>
+            <p id="price">R$ 9,50</p>
          </div>
-         <div class="order">
-            <img src="./img/frango_yin_yang 1.png" alt="Frango Yin Yang">
-            <h4>Frango Yin Yang</h4>
-            <p id="description">Um pouco de batata, <br> um pouco de salada</p>
-            <p id="price">R$ 14,90</p>
+         <div class="order" onclick="pickPrato(this)">
+            <img src="./img/pizza.jpg" alt="Pizza">
+            <h4>Pizza</h4>
+            <p id="description">Diversos sabores</p>
+            <p id="price">R$ 20,00</p>
          </div>
       </section>
 
       <h3>Agora, sua bebida</h3>
       <section>
-         <div class="order">
+         <div class="order" onclick="pickDrink(this)">
             <img src="./img/coquinha_gelada 1.png" alt="Lata de coca-cola">
             <h4>Coquinha gelada</h4>
             <p id="description">Lata de 350ml</p>
-            <p id="price">R$ 4,90</p>
+            <p id="price">R$ 3,90</p>
          </div>
-         <div class="order">
-            <img src="./img/coquinha_gelada 1.png" alt="Lata de coca-cola">
-            <h4>Coquinha gelada</h4>
-            <p id="description">Lata de 350ml</p>
-            <p id="price">R$ 4,90</p>
+         <div class="order" onclick="pickDrink(this)">
+            <img src="./img/guarana_antartica.png" alt="Copo e lata de guaraná">
+            <h4>Guaraná especial</h4>
+            <p id="description">Lata ou copo!</p>
+            <p id="price">R$ 4,00</p>
          </div>
-         <div class="order">
-            <img src="./img/coquinha_gelada 1.png" alt="Lata de coca-cola">
-            <h4>Coquinha gelada</h4>
-            <p id="description">Lata de 350ml</p>
-            <p id="price">R$ 4,90</p>
+         <div class="order" onclick="pickDrink(this)">
+            <img src="./img/suco.jpg" alt="Suco de laranja">
+            <h4>Suco de Laranja</h4>
+            <p id="description">Copão!</p>
+            <p id="price">R$ 2,50</p>
          </div>
       </section>
 
       <h3>Por fim, sua sobremesa</h3>
       <section>
-         <div class="order">
+         <div class="order" onclick="pickDessert(this)">
             <img src="./img/pudim 1.png" alt="Pudim de Leite Condensado">
             <h4>Pudim</h4>
             <p id="description">Pudim de Leite condensado</p>
-            <p id="price">R$ 7,90</p>
+            <p id="price">R$ 5,50</p> 
          </div>
-         <div class="order">
-            <img src="./img/pudim 1.png" alt="Pudim de Leite Condensado">
-            <h4>Pudim</h4>
-            <p id="description">Pudim de Leite condensado</p>
-            <p id="price">R$ 7,90</p>
+         <div class="order"onclick="pickDessert(this)" >
+            <img src="./img/Sorvete-de-chocolate-caseiro-com-4-ingredientes-confira.png" alt="Sorvete de chocolate">
+            <h4>Sorvete de chocolate</h4>
+            <p id="description">3 bolas</p>
+            <p id="price">R$ 7,60</p>
          </div>
-         <div class="order">
-            <img src="./img/pudim 1.png" alt="Pudim de Leite Condensado">
-            <h4>Pudim</h4>
-            <p id="description">Pudim de Leite condensado</p>
-            <p id="price">R$ 7,90</p>
+         <div class="order" onclick="pickDessert(this)">
+            <img src="./img/mousse.jpg" alt="Mousse de maracujá">
+            <h4>Mousse de maracujá</h4>
+            <p id="description">Muito cremoso!</p>
+            <p id="price">R$ 4,65</p>
          </div>
       </section>
    </main>
    <footer>
-      <div>
+      <div class="button">
          <p>Selecione os 3 itens <br> para fechar o pedido</p>
       </div>
    </footer>
+
+   <script src="./script.js"></script>
    
 </body>
 </html>
