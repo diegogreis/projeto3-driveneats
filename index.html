@@ -20,78 +20,116 @@
    </header>
 
    <main>
+
+      <!-- Div checkBox -->
+      <div id="showBox" class="hidden">
+         <div class="checkBox">
+            <h2>Confirme seu pedido</h2>
+            <div class="pedido">
+               <div class="prato">
+                  <p class="p1">Prato</p>
+                  <p class="p2">Drink</p>
+                  <p class="p3">Dessert</p>
+                  <strong><p>Total</p></strong>
+               </div>
+               <div class="preco">
+                  <p class="pr1">Preço</p>
+                  <p class="pr2">Preço</p>
+                  <p class="pr3">Preço</p>
+                  <strong><p class="precoTotal">Preço Total</p></strong>
+               </div>
+            </div>
+            <div class="tudoCerto">
+               <p>Tudo certo, pode pedir!</p>
+            </div>
+            <div class="cancelar">
+               <p>Cancelar</p>
+            </div>
+         </div>
+      </div>
+
+      <!-- Normal display -->
       <h3>Primeiro, seu prato</h3>
-      <section>
+      <section class="food">
          <div class="order" onclick="pickPrato(this)">
             <img src="./img/frango_yin_yang 1.png" alt="Frango Yin Yang">
             <h4>Frango Yin Yang</h4>
             <p id="description">Um pouco de batata, <br> um pouco de salada.</p>
             <p id="price">R$ 15,99</p>
+            <ion-icon class="checked" name="checkmark-circle"></ion-icon>
          </div>
          <div class="order" onclick="pickPrato(this)">
             <img src="./img/x-burger.jpg" alt="Cheese Burguer">
             <h4>X-Burgão</h4>
             <p id="description">Artesanal e delicioso!</p>
             <p id="price">R$ 9,50</p>
+            <ion-icon class="checked" name="checkmark-circle"></ion-icon>
          </div>
          <div class="order" onclick="pickPrato(this)">
             <img src="./img/pizza.jpg" alt="Pizza">
             <h4>Pizza</h4>
             <p id="description">Diversos sabores</p>
             <p id="price">R$ 20,00</p>
+            <ion-icon class="checked" name="checkmark-circle"></ion-icon>
          </div>
       </section>
 
       <h3>Agora, sua bebida</h3>
-      <section>
+      <section class="drink">
          <div class="order" onclick="pickDrink(this)">
             <img src="./img/coquinha_gelada 1.png" alt="Lata de coca-cola">
             <h4>Coquinha gelada</h4>
             <p id="description">Lata de 350ml</p>
             <p id="price">R$ 3,90</p>
+            <ion-icon class="checked" name="checkmark-circle"></ion-icon>
          </div>
          <div class="order" onclick="pickDrink(this)">
             <img src="./img/guarana_antartica.png" alt="Copo e lata de guaraná">
             <h4>Guaraná especial</h4>
             <p id="description">Lata ou copo!</p>
             <p id="price">R$ 4,00</p>
+            <ion-icon class="checked" name="checkmark-circle"></ion-icon>
          </div>
          <div class="order" onclick="pickDrink(this)">
             <img src="./img/suco.jpg" alt="Suco de laranja">
             <h4>Suco de Laranja</h4>
             <p id="description">Copão!</p>
             <p id="price">R$ 2,50</p>
+            <ion-icon class="checked" name="checkmark-circle"></ion-icon>
          </div>
       </section>
 
       <h3>Por fim, sua sobremesa</h3>
-      <section>
+      <section class="dessert">
          <div class="order" onclick="pickDessert(this)">
             <img src="./img/pudim 1.png" alt="Pudim de Leite Condensado">
             <h4>Pudim</h4>
             <p id="description">Pudim de Leite condensado</p>
             <p id="price">R$ 5,50</p> 
+            <ion-icon class="checked" name="checkmark-circle"></ion-icon>
          </div>
          <div class="order"onclick="pickDessert(this)" >
             <img src="./img/Sorvete-de-chocolate-caseiro-com-4-ingredientes-confira.png" alt="Sorvete de chocolate">
             <h4>Sorvete de chocolate</h4>
             <p id="description">3 bolas</p>
             <p id="price">R$ 7,60</p>
+            <ion-icon class="checked" name="checkmark-circle"></ion-icon>
          </div>
          <div class="order" onclick="pickDessert(this)">
             <img src="./img/mousse.jpg" alt="Mousse de maracujá">
             <h4>Mousse de maracujá</h4>
             <p id="description">Muito cremoso!</p>
             <p id="price">R$ 4,65</p>
+            <ion-icon class="checked" name="checkmark-circle"></ion-icon>
          </div>
       </section>
    </main>
    <footer>
-      <div class="button">
+      <div class="button" onclick="closeOrder()">
          <p>Selecione os 3 itens <br> para fechar o pedido</p>
       </div>
    </footer>
-
+   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
    <script src="./script.js"></script>
    
 </body>

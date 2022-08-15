@@ -90,6 +90,7 @@ main .order {
    border-radius: 9px;
    margin-right: 20px;
    padding: 15px 10px;
+   position: relative;
 }
 
 main .order img {
@@ -163,6 +164,12 @@ footer div p {
    border: 5px solid #32b72f;
 }
 
+.selecionadoPrato .checked,
+.selecionadoDrink .checked, 
+.selecionadoDessert .checked {
+   opacity: 1;
+}
+
 .close {
    background-color: #32b72f;
    display: flex;
@@ -170,3 +177,84 @@ footer div p {
    align-items: center;
    color: white;
 }
+
+/* Checked */
+.checked {
+   color: #32b72f;
+   font-size: 20px;
+   position: absolute;
+   right: 7px;
+   bottom: 5px;
+   opacity: 0;
+}
+
+/* CheckBox */
+
+
+.hidden {
+   display:none;
+}
+.oppacity {
+   opacity: 0.2;
+}
+
+.checkBox {
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   width: 380px;
+   height: 350px;
+   border-radius: 10px;
+   background-color: #32b72f;
+   color: white;
+   font-size: 22px;
+   text-align: center;
+   
+}
+.pedido {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 20px;
+}
+.checkBox h2 {
+   margin-top: 20px;
+}
+
+.prato .preco {
+   display: flex;
+   flex-direction: column;
+}
+.prato p {
+   margin-bottom: 20px;
+}
+.preco p {
+   margin-bottom: 20px;
+}
+.pedido strong {
+   font-weight: 700;
+}
+.tudoCerto {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   width: 300px;
+   height: 50px;
+   background-color: white;
+   color: #32b72f;
+   border-radius: 30px;
+}
+.cancelar {
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   margin: 0 auto;
+   width: 300px;
+   height: 50px;
+   background-color: #32b72f;
+   color: white;
+   border-radius: 30px;
+}
+
